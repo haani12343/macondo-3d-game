@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html> lang="en"</html>
+<head>
+    <meta cahrset="UTF-8">
+    <tittle>Into The DARK</tittle>
+    <style>
+        body, html {margin: 0; padding: 0; overflow: hidden; background: black; font-family: 'Courier New', Courier, monospace; user-select: none;}
+        canvas { display: block; width 100vw; height: 100vh;}
+        #vhs-container {position: absolute; top: 0; left: 0; width:100%; height: 100%; pointer-events: none; z-index: 10; box-shadow: inset 0 0 100px rgba(0,0,0,0.8);}
+        #vhs-text { postion: absolute; top: 30px; left 30px; color: #fff; font-size: 24px; text-shadow: 2px 2px #000; font-weight: bold;}
+        #vhs-static { position:absolute; width: 100%; height: 100%; background: rgba;(255,255,255,0.03); opacity: 0.5;}
+        #gameui {position: absolute; bottom: 10%; width: 100%; text-align: center; color: white; font-size: 22px; text-shadow: 2px 2px 4px #000; z-index: 11; font-weight: bold;}
+        #interaction-prompt { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: yellow; font-size: 20px; text-shadow: 2px 2px #000; display: none; z-index: 11;}
+
+    </style>
+</head>
+<body>
+    <div id="vhs-container"></div>
+<div id="vhs-text">● REC<br><span> id="vhs-time">JAN 01 198X<br>12:34:56 PM</span></div>
+<div id="vhs-static"></div>
+</div>
+
+<div id="game-ui">Click anywhere to start the game....</div>
+<div id="interaction-prompt">PRESS 'E' to Interact</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="game.js"></script>
+
+</body>
+</html>
+    
